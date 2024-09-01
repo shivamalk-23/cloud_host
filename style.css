@@ -1,0 +1,166 @@
+/* base css code */
+* {
+    margin: 0;
+}
+
+.head {
+    font-family: "SUSE", sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.image {
+    width: 40px;
+}
+.big_screen_corner{
+    display: none;
+}
+
+.nbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop_down {
+    position: relative;
+    display: inline-block;
+}
+
+.drop_down_content {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    background-color: white;
+    z-index: 1;
+    display: none;
+    list-style: none;
+    min-width: 100px;
+}
+.drop_down_big{
+    display: none;
+}
+.btn1{
+    background-color: hsl(214.84deg 78.81% 46.27%);
+    padding: 10px;
+    color: white;
+    border-radius: 15px;
+}
+span{
+
+}
+
+.drop_down:hover .drop_down_content {
+    display: block;
+
+}
+
+.drop_down_content a {
+    text-decoration: none;
+}
+
+.menu-item {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+
+
+}
+
+.menu-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.screen1 {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.title{
+    
+    margin: 10px;
+}
+.search_bar{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: start;
+}
+.search_bar input{
+    margin: 5px;
+    padding: 10px 35px 10px 35px;
+    border-radius: 10px ;
+    
+}
+
+/* screen size for tabs or mid screen size */
+
+@media (width > 601px) and (width < 1280px) {
+    .head {
+
+        font-size: 30px;
+
+    }
+
+    .drop_down_content {
+        min-width: 250px;
+    }
+
+    .image {
+        width: 50px;
+    }
+
+}
+
+/* screen size for moniters */
+
+@media (width > 1280px) {
+    .head {
+
+        font-size: 35px;
+
+
+    }
+    .home_nav {
+        display: none;
+    }
+    .drop_down_big{
+        display: flex;
+            }
+    .big_screen_corner{
+        display: block;
+        margin: 10px;
+    }
+    .drop_down_big_content{
+        display: flex;
+        list-style: none;
+    }
+    .drop_down_big_content li{
+        color:black;
+        padding: 10px;
+        font-weight: bolder;
+    }
+    .drop_down_big li a{
+        color: rgba(0, 0, 0,0.5);
+        text-decoration: none;
+    }
+    
+
+    
+
+    .image {
+        width: 50px;
+    }
+
+}
