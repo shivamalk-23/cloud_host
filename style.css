@@ -81,8 +81,8 @@ h6{
 }
 
 .screen1 {
-    height: 80vh;
     
+    font-size: small;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,8 +93,9 @@ h6{
 
 }
 .title_search{
-flex: 1 0 90%;
-padding-top: 4rem;
+flex: 0.9 0 70%;
+padding-top: 4rem ;
+
 
 }
 .screen1 div{
@@ -129,17 +130,25 @@ padding-top: 4rem;
     
 }
 .pg1-foot{
+    padding-top: 20vh;
     font-size: smaller;
    
 }
 .screen2{
-    height: 100vh;
+  
     
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
+}
+
+.small{
+    display: block;
+}
+.bigscreen{
+    display: none;
 }
 span{
     color: hsl(214.7deg 78.72% 46.08%);
@@ -161,6 +170,68 @@ p{
    
    opacity: 0.1;
 }
+.font p{
+  
+    margin-right:1rem ;
+    padding: 0;
+
+}
+.font #id{
+    margin-bottom: 0 !important;
+    color: blue;
+    padding: 0 !important;
+}
+.time{
+    color: hsl(214.53deg 67.72% 50.2%);
+    background-color:hsl(216.43deg 70% 92.16%) ;
+    padding:0.2rem 0.7rem 0.2rem 0.7rem;
+    border-radius: 15px;
+}
+.company{
+    color: hsl(135.96deg 45.61% 46.86%);
+    background-color: hsl(131.25deg 36.36% 91.37%);
+    padding:0.2rem 0.7rem 0.2rem 0.7rem;
+    border-radius: 15px;
+}
+.urgency{
+    color: hsl(41.14deg 95.45% 56.86%);
+    background-color: hsl(40.54deg 94.87% 92.35%);
+    padding:0.2rem 0.7rem 0.2rem 0.7rem;
+    border-radius: 15px;
+}
+
+.cards{
+    border: rgba(0, 0, 0,0.1) solid 1px;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 15px;
+}
+.carousel-item{
+    width: 50vw;
+    height: 50vh;
+    background-color: aqua;
+}
+/* screen2 elments css */
+.title-screen2{
+    color: hsl(214.7deg 78.72% 46.08%);
+    font-weight: bolder;
+    font-size: larger;
+    margin: 0;
+}
+.img-screen2{
+    color: white;
+    background-color: hsl(214.7deg 78.72% 46.08%);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+/* screen4 elemnts css */
+.screen4 h2{
+    opacity: 0.9;
+    font-weight: bolder;
+    text-align:  center;
+}
+
 /* screen size for tabs or mid screen size */
 
 @media (width > 601px) and (width < 1280px) {
@@ -188,6 +259,12 @@ p{
         font-size: 35px;
 
 
+    }
+    .small{
+        display: none;
+    }
+    .bigscreen{
+        display: block;
     }
     .home_nav {
         display: none;
@@ -230,11 +307,13 @@ p{
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 0;
        
     }
     .screen1{
         justify-content: center;
         padding: 0;
+        height: 90vh;
     }
     .screen1 div{
         position: relative;
@@ -243,6 +322,8 @@ p{
     .title_search{
         flex: none;
     }
-    
+    .screen2{
+        height: 100vh;
+    }
 
 }
