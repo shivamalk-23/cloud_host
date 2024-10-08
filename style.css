@@ -74,6 +74,13 @@ h6{
 
 
 }
+.ul {
+    list-style: none;
+  }
+  
+  .ul li:before {
+    content: '✓';
+  }
 
 .menu-item:hover {
     background-color: rgba(0, 0, 0, 0.1);
@@ -144,6 +151,10 @@ padding-top: 4rem ;
     text-align: center;
     justify-content: center;
 }
+.carousel-indicators {
+    position: absolute;
+    top: 100%;
+}
 
 .small{
     display: block;
@@ -162,7 +173,17 @@ p{
     opacity: 0.9;
     font-weight: bolder;
 }
+.carousel-inner{
+  
+ }
+
 .card-slider{
+    left: 50%;
+    margin: auto;
+    max-width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 1rem;
     border: solid rgba(0, 0, 0,0.1) 1px;
     padding-top: 1rem;
@@ -216,7 +237,7 @@ p{
 
 .cards{
     border: rgba(0, 0, 0,0.1) solid 1px;
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 0.2rem 3rem 0.2rem 3rem;
     border-radius: 15px;
 }
 
@@ -254,19 +275,22 @@ p{
 .screen4 p{
     text-align: center;
 }
-.carousel-indicators{
- 
- top: 15rem;
-}
 
 .carousel-indicators .active{
  background-color: black !important;
+
+ width: 20px !important;
+height: 5px !important;
+border-radius: 10px !important;
+transition: 0.4s;
+ 
+
 }
 .sliderButton{
     background-color: rgb(123, 123, 123) !important;
     border-radius: 50%;
-    padding-top: 1rem !important;
-    width: 20px !important;
+    
+    width: 5px !important;
     height: 5px !important;
 
 }
@@ -280,14 +304,23 @@ padding-left: 4rem;
 padding-right: 4rem;
 }
 .imageLogos{
-    width: 7rem;
-
-    margin: 2rem;
+    max-width: 4rem;
 }
 /* screen 7 styling */
 .screen7{
     text-align: center;
 }
+.widths{
+    max-width: 100%;
+}
+.screen8{
+    padding-top:3rem ;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    background-color: hsl(230deg 18.75% 93.73%);
+}
+
 /* screen size for tabs or mid screen size */
 
 @media (width > 601px) and (width < 1280px) {
@@ -295,6 +328,9 @@ padding-right: 4rem;
 
         font-size: 30px;
 
+    }
+    .imageLogos{
+        min-width: 1rem;
     }
 
     .drop_down_content {
@@ -304,6 +340,10 @@ padding-right: 4rem;
     .image {
         width: 40px;
     }
+    .widths{
+        max-width: 80%;
+    }
+    
 
 }
 
@@ -381,4 +421,8 @@ padding-right: 4rem;
     .screen2{
         height: 100vh;
     }
+    .widths{
+        max-width: 60%;
+    }
+    
 }
